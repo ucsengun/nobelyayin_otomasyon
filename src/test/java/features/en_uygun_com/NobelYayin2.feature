@@ -5,7 +5,6 @@ Feature: Nobel Yayin Feature
     Given Nobel Yayin websitesine eriş.
   And Websayfasını aşağıya doğru kaydır.
   And Ana sayfanın site haritası kısmında yer alan İnsan Kaynakları butonuna tıkla.
-  And Açılan kayıt formundaki bütün girdileri test verilerine göre doldur.
-
+  And Açılan kayıt formundaki bütün girdileri uygun bir şekilde doldur.
   Then Kayıt formunun alt kısmında yer alan Gönder butonuna tıkla.
 

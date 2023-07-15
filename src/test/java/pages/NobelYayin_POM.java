@@ -17,16 +17,16 @@ public class NobelYayin_POM extends MyMethods {
     private WebElement insanKaynaklariButonu;
     @FindBy(xpath = "//input[@value='Gönder']")
     private WebElement gonderButonu;
-    @FindBy(css = ".MuiButton01222:nth-child(1)")
-    private WebElement submitButton;
-    @FindBy(xpath = "//span[text()='Otobüs Bileti']")
-    private WebElement busTab;
-    @FindBy(xpath = "(//input[@data-testid='originsearchInput'])[1]")
-    private WebElement origin;
-    @FindBy(xpath = "(//input[@data-testid='destinationsearchInput'])[1]")
-    private WebElement destination;
-    @FindBy(css = "div[data-testid='search-from_datepicker']")
-    private WebElement departureDateButton;
+    @FindBy(xpath = "")
+    private WebElement basvurduguPozisyon;
+    @FindBy(xpath = "//input[@name='adsoyad']")
+    private WebElement adSoyad;
+    @FindBy(xpath = "//input[@name='dyeri']")
+    private WebElement dogumYeri;
+    @FindBy(xpath = "//input[@value='E']")
+    private WebElement cinsiyet;
+    @FindBy(css = "")
+    private WebElement adres;
     @FindBy(css = "td[aria-label='Pazartesi, 10 Temmuz 2023']")
     private WebElement getDepartureDate;
     @FindBy(xpath = "(//strong[text()='Otobüs bileti bul'])[1]")
@@ -82,28 +82,25 @@ public class NobelYayin_POM extends MyMethods {
         return gonderButonu;
     }
 
-    public WebElement getUrunArama() {
-        return urunArama;
+    public WebElement getBasvurduguPozisyon() {
+        return basvurduguPozisyon;
     }
 
-    public List<WebElement> getNavbarLinkList() {
-        return navbarLinkList;
+    public WebElement getAdSoyad() {
+        return adSoyad;
     }
 
-    public WebElement getBookedSeat() {
-        return bookedSeat;
+    public WebElement getDogumYeri() {
+        return dogumYeri;
     }
 
-    public WebElement getWarningMessage() {
-        return warningMessage;
+
+    public WebElement getCinsiyet() {
+        return cinsiyet;
     }
 
-    public WebElement getEmailAddressBeforePayment() {
-        return emailAddressBeforePayment;
-    }
-
-    public WebElement getPhoneNumberBeforePayment() {
-        return phoneNumberBeforePayment;
+    public WebElement getAdres() {
+        return adres;
     }
 
     public WebElement getPassengerName() {
@@ -170,16 +167,10 @@ public class NobelYayin_POM extends MyMethods {
         return acceptAndContinueButton;
     }
 
-    public WebElement getBusTab() {
-        return busTab;
-    }
 
 
 
 
 
 
-    public WebElement getSubmitButton() {
-        return submitButton;
-    }
 }
