@@ -25,83 +25,83 @@ public class NobelYayin_POM extends MyMethods {
     private WebElement dogumYeri;
     @FindBy(xpath = "//input[@value='E']")
     private WebElement cinsiyet;
-    @FindBy(css = " ")
+    @FindBy(xpath = "//textarea[@name='adres']")
     private WebElement adres;
-    @FindBy(css = " ")
+    @FindBy(xpath = "//input[@name='telefoncep']")
     private WebElement telefonGsm;
-    @FindBy(xpath = " ")
+    @FindBy(xpath = "//input[@name='telefonsab']")
     private WebElement telefonSabit;
-    @FindBy(xpath = " ")
+    @FindBy(xpath = "//input[@name='meslek']")
     private WebElement meslek;
-    @FindBy(xpath = " ")
+    @FindBy(xpath = "//input[@name='dtarihi']")
     private WebElement dogumTarihi;
-    @FindBy(xpath = " ")
+    @FindBy(xpath = "//input[@value='Evli']")
     private WebElement medeniHal;
-    @FindBy(id = " ")
+    @FindBy(xpath = "//input[@name='eposta']")
     private WebElement ePosta;
-    @FindBy(css = " ")
+    @FindBy(xpath = "//input[@name='ogrenimLise']")
     private WebElement okulAdiLise;
-    @FindBy(css = " ")
+    @FindBy(xpath = "//input[@name='ogrenimLiseBolum']")
     private WebElement bolumLise;
-    @FindBy(id = " ")
+    @FindBy(xpath = "//input[@name='ogrenimLiseTarih']")
     private WebElement baslamaBitisTarihiLise;
-    @FindBy(id = "passenger0_lastname")
+    @FindBy(xpath = "//input[@name='ogrenimLisans']")
     private WebElement okulAdiLisans;
-    @FindBy (xpath = "(//span[@data-testid='bus-checkmark'])[2]")
+    @FindBy (xpath = "//input[@name='ogrenimLisansBolum']")
     private WebElement bolumLisans;
-    @FindBy(css = "input[name='passengers[0][passport_no]']")
+    @FindBy(xpath = "//input[@name='ogrenimLisansTarih']")
     private WebElement baslamaBitisTarihiLisans;
-    @FindBy(css = " ")
+    @FindBy(xpath = "//input[@name='isyeri_adi']")
     private WebElement isyeriAdi;
-    @FindBy(xpath = " ")
+    @FindBy(xpath = "//input[@name='gorev']")
     private WebElement gorev;
-    @FindBy(xpath = " ")
+    @FindBy(xpath = "//input[@name='net_gelir']")
     private WebElement netGelir;
-    @FindBy(xpath = " ")
+    @FindBy(xpath = "//input[@name='girisCikisTarihi']")
     private WebElement girisCikisTarihi;
-    @FindBy(xpath = "//span[text()='Dolu bir koltuk seçtiniz, lütfen beyaz renkle belirtlen boş koltuklardan birini seçin.']")
+    @FindBy(xpath = "//input[@name='neden']")
     private WebElement ayrilikNedeni;
-    @FindBy(css = " ")
+    @FindBy(xpath = "//input[@name='dil']")
     private WebElement dil;
 
-    @FindBy(css = ".searchBoxOld-P2GCKq3V7DvEXIgWsSCP")
+    @FindBy( xpath = "//select[@name='okuma']") abc
     private WebElement okuma;
 
-    @FindBy(id = "onetrust-accept-btn-handler")
+    @FindBy(id = "onetrust-accept-btn-handler") abc
     private  WebElement yazma;
 
-    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    @FindBy(xpath = "//a[text()='Kampanyalar']") abc
     private WebElement konusma;
 
-    @FindBy(css = " ")
+    @FindBy(xpath = "//input[@name='programlama']")
     private WebElement programlamaDilleri;
 
-    @FindBy(css = ".searchBoxOld-P2GCKq3V7DvEXIgWsSCP")
+    @FindBy(xpath = "//input[@name='veritabani']")
     private WebElement veriTabani;
-    @FindBy(id = "onetrust-accept-btn-handler")
+    @FindBy(xpath = "//input[@name='paketprogram']")
     private  WebElement paketProgramlar;
 
-    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    @FindBy(xpath = "//input[@name='digerprogram']")
     private WebElement diger;
 
-    @FindBy(css = ".searchBoxOld-P2GCKq3V7DvEXIgWsSCP")
+    @FindBy(xpath = "//td[contains(text(),'Ehliyetiniz Var m')]//input[2]")
     private WebElement varEhliyet;
 
-    @FindBy(id = "onetrust-accept-btn-handler")
+    @FindBy(xpath = "//input[@name='ehliyet_grubu']")
     private  WebElement ehliyetSinifi;
 
-    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    @FindBy(xpath = "//td[normalize-space()='Var']//input[@name='ehliyet_deneyim']")
     private WebElement varSoforlukDeneyimi;
 
-    @FindBy(css = " ")
+    @FindBy(css = "input[value='Yok'][name='saglik']")
     private WebElement yokSaglikSorunu;
 
-    @FindBy(css = ".searchBoxOld-P2GCKq3V7DvEXIgWsSCP")
+    @FindBy(css = "input[value='Yok'][name='seyehat']")
     private WebElement yokSeyahatEngeli;
-    @FindBy(id = "onetrust-accept-btn-handler")
+    @FindBy(css = "input[value='Yaptı']")
     private  WebElement yaptiAskerlikDurumu;
 
-    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    @FindBy(xpath = "//input[@name='sigara']")
     private WebElement sigaraKullaniyorMusunuz;
 
     @FindBy(id = "onetrust-accept-btn-handler")
