@@ -17,7 +17,7 @@ public class NobelYayin_POM extends MyMethods {
     private WebElement insanKaynaklariButonu;
     @FindBy(xpath = "//input[@value='Gönder']")
     private WebElement gonderButonu;
-    @FindBy(xpath = " ")
+    @FindBy(xpath = "//select[@name='pozisyon']")
     private WebElement basvurduguPozisyon;
     @FindBy(xpath = "//input[@name='adsoyad']")
     private WebElement adSoyad;
@@ -64,13 +64,15 @@ public class NobelYayin_POM extends MyMethods {
     @FindBy(xpath = "//input[@name='dil']")
     private WebElement dil;
 
-    @FindBy( xpath = "//select[@name='okuma']") abc
+    @FindBy( xpath = "//select[@name='okuma']")
     private WebElement okuma;
 
-    @FindBy(id = "onetrust-accept-btn-handler") abc
+
+
+    @FindBy(xpath = "//select[@name='yazma']")
     private  WebElement yazma;
 
-    @FindBy(xpath = "//a[text()='Kampanyalar']") abc
+    @FindBy(xpath = "//select[@name='konusma']")
     private WebElement konusma;
 
     @FindBy(xpath = "//input[@name='programlama']")
@@ -104,38 +106,38 @@ public class NobelYayin_POM extends MyMethods {
     @FindBy(xpath = "//input[@name='sigara']")
     private WebElement sigaraKullaniyorMusunuz;
 
-    @FindBy(id = "onetrust-accept-btn-handler")
+    @FindBy(xpath = "//input[@name='alkol']")
     private  WebElement alkolKullaniyorMusunuz;
 
-    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    @FindBy(xpath = "//input[@name='hassas']")
     private WebElement hassasOldugunuzKonu;
 
-    @FindBy(css = " ")
+    @FindBy(xpath = "//input[@name='hobiler']")
     private WebElement hobileriniz;
 
-    @FindBy(css = ".searchBoxOld-P2GCKq3V7DvEXIgWsSCP")
+    @FindBy(xpath = "//input[@name='yetenek']")
     private WebElement ozelYeteneginiz;
-    @FindBy(id = "onetrust-accept-btn-handler")
+    @FindBy(xpath = "//input[@name='referans_adi']")
     private  WebElement referansAdSoyad;
 
-    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    @FindBy(xpath = "//input[@name='referans_meslegi']")
     private WebElement referansMeslegi;
 
-    @FindBy(id = "onetrust-accept-btn-handler")
+    @FindBy(xpath = "//input[@name='referans_adresi']")
     private  WebElement referansAdresi;
 
-    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    @FindBy(xpath = "//input[@name='referans_telefonu']")
     private WebElement referansTelefonu;
 
-    @FindBy(css = " ")
+    @FindBy(xpath = "//input[@name='departman']")
     private WebElement calismakIstediginizDepartman;
 
-    @FindBy(css = ".searchBoxOld-P2GCKq3V7DvEXIgWsSCP")
+    @FindBy(xpath = "//input[@name='ucret_talep']")
     private WebElement talepEttiginizUcret;
-    @FindBy(id = "onetrust-accept-btn-handler")
+    @FindBy(xpath = "//textarea[@name='tanim']")
     private  WebElement kendiniziNasilTanimlarsiniz;
 
-    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    @FindBy(xpath = "//textarea[@name='aciklama']")
     private WebElement aciklama;
     public WebElement getInsanKaynaklariButonu() {
         return insanKaynaklariButonu;
@@ -228,6 +230,10 @@ public class NobelYayin_POM extends MyMethods {
 
     public WebElement getGirisCikisTarihi() {
         return girisCikisTarihi;
+    }
+
+    public WebElement getAyrilikNedeni(){
+        return ayrilikNedeni;
     }
 
     public WebElement getDil() {
