@@ -17,7 +17,7 @@ public class NobelYayin_POM extends MyMethods {
     private WebElement insanKaynaklariButonu;
     @FindBy(xpath = "//input[@value='Gönder']")
     private WebElement gonderButonu;
-    @FindBy(xpath = "")
+    @FindBy(xpath = " ")
     private WebElement basvurduguPozisyon;
     @FindBy(xpath = "//input[@name='adsoyad']")
     private WebElement adSoyad;
@@ -25,55 +25,118 @@ public class NobelYayin_POM extends MyMethods {
     private WebElement dogumYeri;
     @FindBy(xpath = "//input[@value='E']")
     private WebElement cinsiyet;
-    @FindBy(css = "")
+    @FindBy(css = " ")
     private WebElement adres;
-    @FindBy(css = "td[aria-label='Pazartesi, 10 Temmuz 2023']")
-    private WebElement getDepartureDate;
-    @FindBy(xpath = "(//strong[text()='Otobüs bileti bul'])[1]")
-    private WebElement continueButton;
-    @FindBy(xpath = "//img[contains(@alt,'Pamukkale')]")
-    private List<WebElement> pamukkaleCompany;
-    @FindBy(xpath = "//div[contains(@class,'hover-active')]")
-    private List<WebElement> firstAvailableSeat;
-    @FindBy(xpath = "//span[text()='Erkek']")
-    private WebElement genderButtonForMale;
-    @FindBy(id = "accept_and_continue")
-    private WebElement acceptAndContinueButton;
-    @FindBy(css = "input[name='contact_email']")
-    private WebElement emailAddressBeforePayment;
-    @FindBy(css = "input[name='contact_phone_number']")
-    private WebElement phoneNumberBeforePayment;
-    @FindBy(id = "passenger0_firstname")
-    private WebElement passengerName;
+    @FindBy(css = " ")
+    private WebElement telefonGsm;
+    @FindBy(xpath = " ")
+    private WebElement telefonSabit;
+    @FindBy(xpath = " ")
+    private WebElement meslek;
+    @FindBy(xpath = " ")
+    private WebElement dogumTarihi;
+    @FindBy(xpath = " ")
+    private WebElement medeniHal;
+    @FindBy(id = " ")
+    private WebElement ePosta;
+    @FindBy(css = " ")
+    private WebElement okulAdiLise;
+    @FindBy(css = " ")
+    private WebElement bolumLise;
+    @FindBy(id = " ")
+    private WebElement baslamaBitisTarihiLise;
     @FindBy(id = "passenger0_lastname")
-    private WebElement passengerLastname;
+    private WebElement okulAdiLisans;
     @FindBy (xpath = "(//span[@data-testid='bus-checkmark'])[2]")
-    private WebElement nonCitizenCheckbox;
+    private WebElement bolumLisans;
     @FindBy(css = "input[name='passengers[0][passport_no]']")
-    private WebElement passportNumber;
-    @FindBy(css = "select[name='passengers[0][passport_country_code]']")
-    private WebElement countryCodeSelectionButton;
-    @FindBy(xpath = "//span[text()='Ödemeye İlerle']")
-    private WebElement continueToPaymentButton;
-    @FindBy(xpath = "//div[text()='Ödeme yap']")
-    private WebElement payButton;
-    @FindBy(xpath = "//div[contains(@class,'sold')]")
-    private WebElement bookedSeat;
+    private WebElement baslamaBitisTarihiLisans;
+    @FindBy(css = " ")
+    private WebElement isyeriAdi;
+    @FindBy(xpath = " ")
+    private WebElement gorev;
+    @FindBy(xpath = " ")
+    private WebElement netGelir;
+    @FindBy(xpath = " ")
+    private WebElement girisCikisTarihi;
     @FindBy(xpath = "//span[text()='Dolu bir koltuk seçtiniz, lütfen beyaz renkle belirtlen boş koltuklardan birini seçin.']")
-    private WebElement warningMessage;
-    @FindBy(css = ".navbar-nav.hidden-sm-down>a")
-    private List<WebElement> navbarLinkList;
+    private WebElement ayrilikNedeni;
+    @FindBy(css = " ")
+    private WebElement dil;
 
     @FindBy(css = ".searchBoxOld-P2GCKq3V7DvEXIgWsSCP")
-    private WebElement urunArama;
+    private WebElement okuma;
 
     @FindBy(id = "onetrust-accept-btn-handler")
-    private  WebElement cerezlerikabulet;
+    private  WebElement yazma;
 
     @FindBy(xpath = "//a[text()='Kampanyalar']")
-    private WebElement kampanyalar;
+    private WebElement konusma;
 
+    @FindBy(css = " ")
+    private WebElement programlamaDilleri;
 
+    @FindBy(css = ".searchBoxOld-P2GCKq3V7DvEXIgWsSCP")
+    private WebElement veriTabani;
+    @FindBy(id = "onetrust-accept-btn-handler")
+    private  WebElement paketProgramlar;
+
+    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    private WebElement diger;
+
+    @FindBy(css = ".searchBoxOld-P2GCKq3V7DvEXIgWsSCP")
+    private WebElement varEhliyet;
+
+    @FindBy(id = "onetrust-accept-btn-handler")
+    private  WebElement ehliyetSinifi;
+
+    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    private WebElement varSoforlukDeneyimi;
+
+    @FindBy(css = " ")
+    private WebElement yokSaglikSorunu;
+
+    @FindBy(css = ".searchBoxOld-P2GCKq3V7DvEXIgWsSCP")
+    private WebElement yokSeyahatEngeli;
+    @FindBy(id = "onetrust-accept-btn-handler")
+    private  WebElement yaptiAskerlikDurumu;
+
+    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    private WebElement sigaraKullaniyorMusunuz;
+
+    @FindBy(id = "onetrust-accept-btn-handler")
+    private  WebElement alkolKullaniyorMusunuz;
+
+    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    private WebElement hassasOldugunuzKonu;
+
+    @FindBy(css = " ")
+    private WebElement hobileriniz;
+
+    @FindBy(css = ".searchBoxOld-P2GCKq3V7DvEXIgWsSCP")
+    private WebElement ozelYeteneginiz;
+    @FindBy(id = "onetrust-accept-btn-handler")
+    private  WebElement referansAdSoyad;
+
+    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    private WebElement referansMeslegi;
+
+    @FindBy(id = "onetrust-accept-btn-handler")
+    private  WebElement referansAdresi;
+
+    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    private WebElement referansTelefonu;
+
+    @FindBy(css = " ")
+    private WebElement calismakIstediginizDepartman;
+
+    @FindBy(css = ".searchBoxOld-P2GCKq3V7DvEXIgWsSCP")
+    private WebElement talepEttiginizUcret;
+    @FindBy(id = "onetrust-accept-btn-handler")
+    private  WebElement kendiniziNasilTanimlarsiniz;
+
+    @FindBy(xpath = "//a[text()='Kampanyalar']")
+    private WebElement aciklama;
     public WebElement getInsanKaynaklariButonu() {
         return insanKaynaklariButonu;
     }
@@ -103,74 +166,177 @@ public class NobelYayin_POM extends MyMethods {
         return adres;
     }
 
-    public WebElement getPassengerName() {
-        return passengerName;
+    public WebElement getTelefonGsm() {
+        return telefonGsm;
     }
 
-    public WebElement getPassengerLastname() {
-        return passengerLastname;
+    public WebElement getTelefonSabit() {
+        return telefonSabit;
     }
 
-    public WebElement getNonCitizenCheckbox() {
-        return nonCitizenCheckbox;
+    public WebElement getMeslek() {
+        return meslek;
     }
 
-    public WebElement getPassportNumber() {
-        return passportNumber;
+    public WebElement getDogumTarihi() {
+        return dogumTarihi;
     }
 
-    public WebElement getCountryCodeSelectionButton() {
-        return countryCodeSelectionButton;
+    public WebElement getMedeniHal() {
+        return medeniHal;
     }
 
-    public WebElement getContinueToPaymentButton() {
-        return continueToPaymentButton;
+    public WebElement getePosta() {
+        return ePosta;
     }
 
-    public WebElement getPayButton() {
-        return payButton;
+    public WebElement getOkulAdiLise() {
+        return okulAdiLise;
     }
 
-    public WebElement getOrigin() {
-        return origin;
+    public WebElement getBolumLise() {
+        return bolumLise;
     }
 
-    public WebElement getDestination() {
-        return destination;
+    public WebElement getBaslamaBitisTarihiLise() {
+        return baslamaBitisTarihiLise;
     }
 
-    public WebElement getDepartureDateButton() {
-        return departureDateButton;
+    public WebElement getOkulAdiLisans() {
+        return okulAdiLisans;
     }
 
-    public WebElement getGetDepartureDate() {
-        return getDepartureDate;
+    public WebElement getBolumLisans() {
+        return bolumLisans;
     }
 
-    public WebElement getContinueButton() {
-        return continueButton;
+    public WebElement getBaslamaBitisTarihiLisans() {
+        return baslamaBitisTarihiLisans;
     }
 
-    public List<WebElement> getPamukkaleCompany() {
-        return pamukkaleCompany;
+    public WebElement getIsyeriAdi() {
+        return isyeriAdi;
     }
 
-    public List<WebElement> getFirstAvailableSeat() {
-        return firstAvailableSeat;
+    public WebElement getGorev() {
+        return gorev;
     }
 
-    public WebElement getGenderButtonForMale() {
-        return genderButtonForMale;
+    public WebElement getNetGelir() {
+        return netGelir;
     }
 
-    public WebElement getAcceptAndContinueButton() {
-        return acceptAndContinueButton;
+    public WebElement getGirisCikisTarihi() {
+        return girisCikisTarihi;
     }
 
+    public WebElement getDil() {
+        return dil;
+    }
 
+    public WebElement getOkuma() {
+        return okuma;
+    }
 
+    public WebElement getYazma() {
+        return yazma;
+    }
 
+    public WebElement getKonusma() {
+        return konusma;
+    }
 
+    public WebElement getProgramlamaDilleri() {
+        return programlamaDilleri;
+    }
+
+    public WebElement getPaketProgramlar() {
+        return paketProgramlar;
+    }
+
+    public WebElement getVeriTabani() {
+        return veriTabani;
+    }
+
+    public WebElement getDiger() {
+        return diger;
+    }
+
+    public WebElement getVarEhliyet() {
+        return varEhliyet;
+    }
+
+    public WebElement getEhliyetSinifi() {
+        return ehliyetSinifi;
+    }
+
+    public WebElement getVarSoforlukDeneyimi() {
+        return varSoforlukDeneyimi;
+    }
+
+    public WebElement getYokSaglikSorunu() {
+        return yokSaglikSorunu;
+    }
+
+    public WebElement getYokSeyahatEngeli() {
+        return yokSeyahatEngeli;
+    }
+
+    public WebElement getYaptiAskerlikDurumu() {
+        return yaptiAskerlikDurumu;
+    }
+
+    public WebElement getSigaraKullaniyorMusunuz() {
+        return sigaraKullaniyorMusunuz;
+    }
+
+    public WebElement getAlkolKullaniyorMusunuz() {
+        return alkolKullaniyorMusunuz;
+    }
+
+    public WebElement getHassasOldugunuzKonu() {
+        return hassasOldugunuzKonu;
+    }
+
+    public WebElement getHobileriniz() {
+        return hobileriniz;
+    }
+
+    public WebElement getOzelYeteneginiz() {
+        return ozelYeteneginiz;
+    }
+
+    public WebElement getReferansAdSoyad() {
+        return referansAdSoyad;
+    }
+
+    public WebElement getReferansMeslegi() {
+        return referansMeslegi;
+    }
+
+    public WebElement getReferansAdresi() {
+        return referansAdresi;
+    }
+
+    public WebElement getReferansTelefonu() {
+        return referansTelefonu;
+    }
+
+    public WebElement getCalismakIstediginizDepartman() {
+        return calismakIstediginizDepartman;
+    }
+
+    public WebElement getTalepEttiginizUcret() {
+        return talepEttiginizUcret;
+    }
+
+    public WebElement getKendiniziNasilTanimlarsiniz() {
+        return kendiniziNasilTanimlarsiniz;
+    }
+
+    public WebElement getAciklama() {
+        return aciklama;
+    }
 
 
 }
