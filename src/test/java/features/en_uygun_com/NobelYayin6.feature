@@ -1,7 +1,7 @@
 Feature: Nobel Yayin İnsan Kaynakları
 
 
-  Scenario: İnsan Kaynakları Kayıt Formu Tamamen Doldurulduğunda Başarılı Kaydın Doğrulaması
+  Scenario: İnsan Kaynakları Sayfası Kayıt Formu Geçersiz Doğum Tarihi Hata Doğrulaması
     Given Nobel Yayin websitesine eriş.
     And Websayfasını aşağıya doğru kaydır.
     And Ana sayfanın site haritası kısmında yer alan İnsan Kaynakları butonuna tıkla.
