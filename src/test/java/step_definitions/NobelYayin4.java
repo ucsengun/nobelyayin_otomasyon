@@ -7,12 +7,12 @@ import pages.NobelYayin_POM;
 public class NobelYayin4 {
     NobelYayin_POM ny = new NobelYayin_POM();
 
-    @And("Açılan kayıt formundaki bütün girdileri yazarken geçersiz soyad ile doldur.")
+    @And("Açılan kayıt formundaki bütün girdileri yazarken geçersiz doğum yeri ile doldur.")
     public void açılanKayıtFormundakiBütünGirdileriYazarkenGeçersizSoyadIleDoldur() {
         Select select = new Select(ny.getBasvurduguPozisyon());
         select.selectByVisibleText("Redaktör");
-        ny.getAdSoyad().sendKeys("İbrahim  */-+{[]h");
-        ny.getDogumYeri().sendKeys("Los Angeles");
+        ny.getAdSoyad().sendKeys("İbrahim  Johnson");
+        ny.getDogumYeri().sendKeys("88888");
         ny.clickMethod(ny.getCinsiyet());
         ny.getAdres().sendKeys("456 Oak Street, Los Angeles");
         ny.getTelefonGsm().sendKeys("555-9876");
