@@ -64,15 +64,14 @@ public class NobelYayin_POM extends MyMethods {
     @FindBy(xpath = "//input[@name='dil']")
     private WebElement dil;
 
-    @FindBy( xpath = "//select[@name='okuma']")
+    @FindBy(xpath = "//select[@name='okuma']//option[@value='İyi'][contains(text(),'İyi')]")
     private WebElement okuma;
 
 
-
-    @FindBy(xpath = "//select[@name='yazma']")
+    @FindBy(xpath = "//select[@name='yazma']//option[@value='İyi'][contains(text(),'İyi')]")
     private  WebElement yazma;
 
-    @FindBy(xpath = "//select[@name='konusma']")
+    @FindBy(xpath = "//select[@name='konusma']//option[@value='İyi'][contains(text(),'İyi')]")
     private WebElement konusma;
 
     @FindBy(xpath = "//input[@name='programlama']")

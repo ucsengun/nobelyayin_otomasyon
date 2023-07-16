@@ -1,6 +1,7 @@
 package step_definitions;
 
 import io.cucumber.java.en.And;
+import org.openqa.selenium.support.ui.Select;
 import pages.NobelYayin_POM;
 
 public class NobelYayin2 {
@@ -8,7 +9,8 @@ public class NobelYayin2 {
     NobelYayin_POM ny = new NobelYayin_POM();
     @And("Açılan kayıt formundaki bütün girdileri uygun bir şekilde doldur.")
     public void açılanKayıtFormundakiBütünGirdileriUygunBirŞekildeDoldur() {
-        ny.clickMethod(ny.getBasvurduguPozisyon());
+        Select select = new Select(ny.getBasvurduguPozisyon());
+        select.selectByVisibleText("Redaktör");
         ny.getAdSoyad().sendKeys("İbrahim Smith");
         ny.getDogumYeri().sendKeys("Los Angeles");
         ny.clickMethod(ny.getCinsiyet());
@@ -31,9 +33,9 @@ public class NobelYayin2 {
         ny.getGirisCikisTarihi().sendKeys("01/01/2015 - 01/01/2020");
         ny.getAyrilikNedeni().sendKeys("Kariyer Değişikliği");
         ny.getDil().sendKeys("İngilizce");
-        //ny.getOkuma().sendKeys("");
-        //ny.getYazma().sendKeys("");
-        //ny.getKonusma().sendKeys("");
+        ny.clickMethod(ny.getOkuma());
+        ny.clickMethod(ny.getYazma());
+        ny.clickMethod(ny.getKonusma());
         ny.getProgramlamaDilleri().sendKeys("Python, Java");
         ny.getPaketProgramlar().sendKeys("Microsoft Office");
         ny.getVeriTabani().sendKeys("SQL");
